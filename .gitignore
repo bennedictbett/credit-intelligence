@@ -1,3 +1,13 @@
+# Data files - never push raw data
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.zip
+
+# Model files
+models/*.pkl
+models/*.joblib
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
