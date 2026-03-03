@@ -23,7 +23,7 @@ def load_model():
 
 @st.cache_data
 def load_reference_data():
-    data = pd.read_csv(BASE_DIR / "data" / "processed" / "processed_train.csv")
+    data = pd.read_csv(BASE_DIR / "data" / "processed" / "processed_sample.csv")
     data.columns = [re.sub(r'[^A-Za-z0-9_]+', '_', col) for col in data.columns]
     return data
 
